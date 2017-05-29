@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Maquetación con HTML5 + CSS</title>
+		<meta charset="utf-8"/>
+		<link href="estilos.css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+		<section id="contenedor">
+			<header id="cabecera_index">
+				<div id="marca">
+					<h1>Propiedades AGB</h1>
+				</div>
+				<div id="redes">
+					<a href="http://www.facebook.com" target="new"><img src="imagenes/boton-facebook.png" alt="Facebook"/></a>
+					<a href="http://www.twitter.com" target="new"><img src="imagenes/boton_twitter.png" alt="Twitter" /></a>
+				</div>
+				<nav id="botonera_principal">
+					<ul>
+						<li><a href="#">inicio</a></li><li><a href="#">ventas</a></li><li><a href="#">alquileres</a></li><li><a href="contacto.html">contáctanos</a></li><li><a href="#">propietarios</a></li><li><a href="quienes_somos.html">¿quiénes somos?</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="contenido_index">
+				<div id="lateral_izq">
+					<div id="imagen1">
+						<h4>
+						Propiedades en venta</h4>
+					</div>
+					<div id="imagen2">
+						<h4>Propiedades en alquiler</h4>
+					</div>
+					<div id="imagen3">
+						<h4>Propietarios</h4>
+					</div>
+					<aside id="buscador">
+					<form method="POST" action="enviar_datos.php">
+						<ul>
+							<li>
+							<input type="number" name="precio_min" placeholder="Precio mínimo" required/>
+							</li>
+							<li>
+							<input type="number" name="precio_max" placeholder="Precio máximo" required/></li>
+							<li><input type="submit" value="Buscar"></li>
+						</ul>
+					</form>
+					</aside>
+				</div> <!-- fin lateral_izq -->
+				<div id="lateral_der">
+					<div id="galeria">
+						<div id="datos_imagen">
+							<h4>USD 999,999 - Ejemplo de propiedad destacada</h4>
+							<p>Promociona propiedades marcándolas como destacadas en la página de edición de propiedades.</p>
+							<p>Mínimo número de líneas de un párrafo que deben ser dejadas como mínimo al principio de una página.</p>
+						</div>
+					</div>
+					<div id="info_index">
+						<h2>Bienvenidos a Propiedades AGB</h2>
+						<p>Encuentra tu nueva casa aquí. Ofrecemos un servicio personalizado y de calidad para atenderte en todas tus necesidades del mundo inmobiliario. Si necesitas asistencia o tienes preguntas, sientete libre de contactarnos.</p>
+					</div>
+				</div> <!-- fin lateral_der -->
+			</section>
+			<footer id="pie_index">
+				<div id="registro">
+					<p>@ 2009 Propiedades AGB</p>
+				</div>
+			</footer>
+		</section> <!-- fin contenedor -->
+	</body>
+</html>

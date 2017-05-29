@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Maquetación con HTML5 + CSS</title>
+		<meta charset="utf-8"/>
+		<link href="estilos.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<section id="contenedor">
+			<header id="cabecera_index">
+				<div id="marca">
+					<h1>Propiedades AGB</h1>
+				</div>
+				<div id="redes">
+					<a href="http://www.facebook.com" target="new"><img src="imagenes/boton-facebook.png" alt="Facebook"/></a>
+					<a href="http://www.twitter.com" target="new"><img src="imagenes/boton_twitter.png" alt="Twitter" /></a>
+				</div>
+				<nav id="botonera_principal">
+					<ul>
+						<li><a href="index.html">inicio</a></li>
+						<li><a href="#">ventas</a></li>
+						<li><a href="#">alquileres</a></li>
+						<li><a href="#">contáctanos</a></li>
+						<li><a href="#">propietarios</a></li>
+						<li><a href="quienes_somos.html">¿quiénes somos?</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="contenido_interno">
+				<div id="interno_izq">
+					<h2>Contáctanos</h2>
+					<form method="POST" action="#">
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre" required/>
+					<br/>
+
+					<label for="apellido">Apellido:
+					</label>
+					<input type="text" name="apellido" required/>
+					<br/>
+
+					<label for="correo">Email:</label>
+					<input type="email" name="correo" required/>
+					<br/>
+
+					<label for="nacimiento">Fecha de nacimiento</label>
+					<input type="date" name="nacimiento" placeholder="dd/mm/aaaa"/> 
+					<br/>
+
+					<label for="edad">Edad</label>
+					<input type="number" name="edad" min="13" max="100"/>
+					<br/>
+
+					<label for="sitio">Sitio Web:</label>
+					<input type="url" name="sitio" placeholder="http://www.misitio.com"/>
+					<br/>
+
+					<label for="telefono">Teléfono:</label>
+					<input type="tel" name="telefono"/>
+					<br/>
+
+					<label for="consulta">Consulta:</label>
+					<textarea name="consulta" rows="5" required></textarea>
+					<br/>
+
+					<input type="submit"/>
+
+
+
+					</form>
+				</div>
+				<div id="interno_der">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2211800156524!2d-58.42248728501084!3d-34.59856816473224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7cd547261d%3A0x60e88fc2c2496c7d!2sAv.+Medrano+951%2C+Cdad.+Aut%C3%B3noma+de+Buenos+Aires!5e0!3m2!1ses!2sar!4v1460550455654" width="340" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="borrar"></div>
+			</section>
+			<footer id="pie_index">
+				<div id="registro">
+					<p>@ 2009 Propiedades AGB</p>
+				</div>
+			</footer>
+		</section> <!-- fin contenedor -->
+	</body>
+</html>
